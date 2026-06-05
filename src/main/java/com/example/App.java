@@ -13,7 +13,7 @@ public class App
     public static void main( String[] args )
     {
         try {
-            System.out.println("正在获取本地IP地址...");
+            System.out.println("正在測試获取本地IP地址...");
             String ipAddress = getLocalIpAddress();
             System.out.println("当前本地IP地址: " + ipAddress);
         } catch (Exception e) {
