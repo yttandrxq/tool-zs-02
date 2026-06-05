@@ -81,8 +81,9 @@ public class App
             connection.setConnectTimeout(5000); // 5秒连接超时
             connection.setReadTimeout(5000);    // 5秒读取超时
             
-            // 设置User-Agent，避免被服务器拒绝
-            connection.setRequestProperty("User-Agent", "Mozilla/5.0");
+            // 设置请求头，确保返回纯文本格式
+            connection.setRequestProperty("User-Agent", "curl");
+            connection.setRequestProperty("Accept", "text/plain");
             
             // 获取响应码
             int responseCode = connection.getResponseCode();
