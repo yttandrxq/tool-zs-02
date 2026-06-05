@@ -16,13 +16,29 @@ public class App
     public static void main( String[] args )
     {
         try {
+            // 设置默认城市为北京
+            String city = "Beijing";
+            
+            // 如果提供了命令行参数，使用第一个参数作为城市名
+            if (args.length > 0) {
+                city = args[0];
+                // 检查是否请求帮助
+                if (city.equals("-h") || city.equals("--help")) {
+                    System.out.println("用法: java com.example.App [城市名]");
+                    System.out.println("示例: java com.example.App Beijing");
+                    System.out.println("       java com.example.App Shanghai");
+                    System.out.println("       java com.example.App London");
+                    return;
+                }
+            }
+            
             System.out.println("测试正在获取本地IP地址...");
             String ipAddress = getLocalIpAddress();
             System.out.println("当前本地IP地址: " + ipAddress);
             
             // 获取当天天气
-            System.out.println("\n正在获取当天天气...");
-            String weather = getWeather("Beijing");
+            System.out.println("\n正在获取" + city + "的天气...");
+            String weather = getWeather(city);
             System.out.println("当前天气: " + weather);
         } catch (Exception e) {
             System.err.println("程序执行出错: " + e.getMessage());
