@@ -37,37 +37,53 @@ mvn exec:java -Dexec.mainClass="com.example.App"
 mvn clean package
 ```
 
-## 项目配置
+## 项目结构
 
-### Git仓库设置
-远程仓库地址: `https://github.com/yttandrxq/tool-zs-02`
-
-### 初始化Git仓库
-1. 确保已安装Git
-2. 运行 `setup_git.bat` 脚本
-3. 按照提示操作
-
-如果 `setup_git.bat` 失败，请手动执行以下命令:
-
-```bash
-# 初始化Git仓库
-git init
-
-# 配置用户信息
-git config user.name "yttandrxq"
-git config user.email "546787955@qq.com"
-
-# 添加文件并提交
-git add .
-git commit -m "初始提交"
-
-# 添加远程仓库
-git remote add origin https://github.com/yttandrxq/tool-zs-02.git
-
-# 推送代码
-git branch -M main
-git push -u origin main
 ```
+tool-zs-02/
+├── src/main/java/com/example/App.java      # 主程序 (获取IP地址)
+├── src/test/java/com/example/AppTest.java  # 单元测试
+├── pom.xml                                 # Maven配置文件
+├── .gitignore                              # Git忽略规则
+├── README.md                               # 项目文档 (本文件)
+├── run.bat                                 # 一键运行脚本
+├── setup_git.bat                           # Git配置管理脚本
+├── git_commands.bat                        # Git操作菜单脚本
+├── 下一步操作.txt                          # 详细操作指南
+└── target/                                 # 编译输出目录 (被忽略)
+```
+
+## Git版本控制
+
+### ✅ Git配置已完成
+- **远程仓库**: `https://github.com/yttandrxq/tool-zs-02`
+- **本地仓库**: `E:\svn\tool-zs-02\.git`
+- **用户信息**: yttandrxq (546787955@qq.com)
+- **当前分支**: main (跟踪 origin/main)
+- **最后提交**: 9de0ff3 "init" (8个文件)
+
+### Git操作脚本
+1. **`git_commands.bat`** - Git操作菜单 (状态、提交、推送等)
+2. **`setup_git.bat`** - Git配置管理 (重新初始化、验证配置)
+
+### 日常Git工作流
+```bash
+# 查看状态
+git_commands.bat status
+
+# 添加更改并提交
+git_commands.bat add
+git_commands.bat commit
+
+# 推送到GitHub
+git_commands.bat push
+
+# 拉取更新
+git_commands.bat pull
+```
+
+### 验证GitHub仓库
+访问: https://github.com/yttandrxq/tool-zs-02
 
 ## 依赖项
 
