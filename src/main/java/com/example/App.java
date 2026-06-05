@@ -17,7 +17,7 @@ public class App
             String ipAddress = getLocalIpAddress();
             System.out.println("当前本地IP地址: " + ipAddress);
         } catch (Exception e) {
-            System.err.println("获取IP地址时出错: " + e.getMessage());
+            System.err.println("获qq取IP地址时出错: " + e.getMessage());
             e.printStackTrace();
         }
     }
