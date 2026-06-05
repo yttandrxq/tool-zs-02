@@ -1,0 +1,35 @@
+<launch4jConfig>
+  <headerType>console</headerType>
+  <jar>../城市天气.jar</jar>
+  <dontWrapJar>true</dontWrapJar>
+  <outfile>../城市天气.exe</outfile>
+  <errTitle>城市天气查询</errTitle>
+  <chdir>.</chdir>
+  <priority>normal</priority>
+  <downloadUrl>https://www.oracle.com/java/technologies/downloads/</downloadUrl>
+  <supportUrl>https://github.com/yttandrxq/tool-zs-02</supportUrl>
+  <stayAlive>false</stayAlive>
+  <restartOnCrash>true</restartOnCrash>
+  <manifest>../launch4j-tool/launch4j/manifest/uac.exe.manifest</manifest>
+  <jre>
+    <path>jre</path>
+    <minVersion>1.8.0</minVersion>
+    <maxVersion>1.8.999</maxVersion>
+    <jdkPreference>preferJre</jdkPreference>
+    <runtimeBits>64</runtimeBits>
+    <initialHeapSize>64</initialHeapSize>
+    <maxHeapSize>256</maxHeapSize>
+  </jre>
+  <versionInfo>
+    <fileVersion>1.0.0.0</fileVersion>
+    <txtFileVersion>1.0</txtFileVersion>
+    <fileDescription>城市天气查询桌面应用</fileDescription>
+    <copyright>2026</copyright>
+    <productVersion>1.0.0.0</productVersion>
+    <txtProductVersion>1.0</txtProductVersion>
+    <productName>城市天气</productName>
+    <companyName></companyName>
+    <internalName>CityWeather</internalName>
+    <originalFilename>城市天气.exe</originalFilename>
+  </versionInfo>
+</launch4jConfig>

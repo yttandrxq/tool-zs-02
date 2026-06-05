@@ -1,0 +1,34 @@
+<launch4jConfig>
+  <headerType>gui</headerType>
+  <jar>../city-weather.jar</jar>
+  <dontWrapJar>false</dontWrapJar>
+  <outfile>../CityWeather.exe</outfile>
+  <errTitle>City Weather</errTitle>
+  <chdir>.</chdir>
+  <priority>normal</priority>
+  <downloadUrl>https://www.oracle.com/java/technologies/downloads/</downloadUrl>
+  <supportUrl>https://github.com/yttandrxq/tool-zs-02</supportUrl>
+  <stayAlive>false</stayAlive>
+  <restartOnCrash>true</restartOnCrash>
+  <jre>
+    <path>jre</path>
+    <minVersion>1.8.0</minVersion>
+    <maxVersion>1.8.999</maxVersion>
+    <jdkPreference>preferJre</jdkPreference>
+    <runtimeBits>64</runtimeBits>
+    <initialHeapSize>64</initialHeapSize>
+    <maxHeapSize>256</maxHeapSize>
+  </jre>
+  <versionInfo>
+    <fileVersion>1.0.0.0</fileVersion>
+    <txtFileVersion>1.0</txtFileVersion>
+    <fileDescription>City Weather App</fileDescription>
+    <copyright>2026</copyright>
+    <productVersion>1.0.0.0</productVersion>
+    <txtProductVersion>1.0</txtProductVersion>
+    <productName>City Weather</productName>
+    <companyName></companyName>
+    <internalName>CityWeather</internalName>
+    <originalFilename>CityWeather.exe</originalFilename>
+  </versionInfo>
+</launch4jConfig>
